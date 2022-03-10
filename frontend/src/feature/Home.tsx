@@ -1,9 +1,18 @@
+import styled from "styled-components";
+import Pagination from "../components/Pagination/Pagination";
 
 
 export default function Home() {
+
     return (
-        <div>
-            <h1>Home</h1>
-        </div>
+        <Wrapper>
+            <Pagination/>  
+        </Wrapper>
     )
-}
+};
+
+const Wrapper = styled.div ` 
+
+display: flex;
+justify-content: center;
+`
