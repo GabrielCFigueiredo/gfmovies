@@ -1,8 +1,11 @@
+
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Button from "../Button/Button";
 import MovieScore from "../MovieScore/MovieScore";
 
 export default function MovieCard() {
+
 
     const movie = {
         id: 1,
@@ -21,12 +24,14 @@ export default function MovieCard() {
                 <div>
                     <MovieScore />
                 </div>
-                <div>
+                <Link to={`/form/${movie.id}`}>
                 <Button 
                     variant="primary"
                     label="Avaliar"
                     />
-                 </div>  
+                </Link>
+                
+                  
             </WrapperDiv>
             <WrapperDiv>
                 <div>

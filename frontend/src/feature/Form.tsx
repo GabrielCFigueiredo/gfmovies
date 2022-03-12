@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Button from "../components/Button/Button";
 import Input from "../components/Input/Input";
@@ -39,18 +40,23 @@ export default function Form(){
                     </Select>
                     </ContainerInput>
                     <ContainerButton>
-                        <Button
+                        <Button 
                         variant="primary"
                         label="Salvar"
                         />
+                        
+                        
                     </ContainerButton>
-                    <ContainerButton>
-                        <Button
+                </FormListWrapper>
+                <ContainerButton>
+                    <Link to={'/'}>
+                    <Button
                         variant="primary"
                         label="Cancelar"
                         />
+                    </Link>
+                      
                     </ContainerButton>
-                </FormListWrapper>
             </Wrapper>
 }
 
