@@ -23,6 +23,8 @@ public class ScorePk implements Serializable {
 	@JoinColumn(name = "user_id")
 	private User user;
 	
+	
+	
 	public ScorePk(){
 		
 	}
